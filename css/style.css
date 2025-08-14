@@ -1,0 +1,286 @@
+/* General Body & Typography */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0.5em 0;
+}
+
+/* Header & Navigation */
+.header-top-bar {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.9em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  font-size: 1.1em;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Main Content & Sections */
+main {
+  padding: 20px 5%;
+}
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* Product Grid */
+.featured-products,
+.collection-header,
+.product-listing {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.1em;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Product Detail Page */
+.product-detail-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.product-image-gallery {
+  flex: 1;
+}
+
+#main-product-image {
+  width: 100%;
+}
+
+.thumbnail-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail.active {
+  border-color: #333;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  font-size: 2.2em;
+}
+
+.product-info .price {
+  font-size: 1.5em;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.product-options {
+  margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+}
+
+/* Cart Page */
+.cart-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+}
+
+.cart-item img {
+  width: 80px;
+  margin-right: 15px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.item-quantity input {
+  width: 50px;
+  text-align: center;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #999;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  border-top: 2px solid #333;
+  padding-top: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #f3f3f3;
+  padding: 30px 5%;
+  margin-top: 40px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+}
