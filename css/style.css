@@ -59,27 +59,30 @@ main {
   padding: 20px 5%;
 }
 
-.hero-section {
+/* Hero Carousel */
+.hero-carousel {
+  width: 100%;
+  overflow: hidden; /* Menyembunyikan slide di luar container */
   position: relative;
-  text-align: center;
-  color: white;
+  margin-bottom: 40px;
 }
 
-.hero-section img {
+#carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Animasi slide */
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-slide img {
   width: 100%;
   height: auto;
-  max-height: 500px;
+  max-height: 500px; /* Sesuaikan tinggi maksimum jika perlu */
   object-fit: cover;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.4);
-  padding: 20px 40px;
-  border-radius: 5px;
+  display: block;
 }
 
 .btn {
@@ -111,6 +114,8 @@ main {
 
 .product-card {
   text-align: center;
+  gap: 50px;
+  padding: 50px 0;
 }
 
 .product-card img {

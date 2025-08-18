@@ -27,3 +27,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.getElementById("carousel-track");
+  const slides = Array.from(track.children);
+  let currentIndex = 0;
+
+  function updateSlidePosition() {
+    // Geser track ke kiri berdasarkan slide saat ini
+    track.style.transform = "translateX(-" + currentIndex * 100 + "%)";
+  }
+
+  function moveToNextSlide() {
+    currentIndex++;
+    // Jika sudah di slide terakhir, kembali ke awal
+    if (currentIndex >= slides.length) {
+      currentIndex = 0;
+    }
+    updateSlidePosition();
+  }
+
+  // Atur interval untuk menggeser slide setiap 3 detik (3000 milidetik)
+  setInterval(moveToNextSlide, 3000);
+
+  // Panggil sekali di awal untuk posisi yang benar
+  updateSlidePosition();
+});
