@@ -77,8 +77,12 @@ nav {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #nav-search-input {
@@ -133,7 +137,7 @@ nav {
   max-width: 420px;
   height: 100%;
   background-color: #ffffff;
-  box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
   z-index: 1003;
   transform: translateX(100%);
   transition: transform 0.3s ease;
@@ -153,8 +157,17 @@ nav {
   padding: 15px 20px;
   border-bottom: 1px solid #e0e0e0;
 }
-.side-cart-header h3 { margin: 0; font-weight: normal; }
-.close-side-cart-btn { background: none; border: none; font-size: 2em; cursor: pointer; color: #555; }
+.side-cart-header h3 {
+  margin: 0;
+  font-weight: normal;
+}
+.close-side-cart-btn {
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #555;
+}
 
 /* Daftar Item */
 .side-cart-items {
@@ -182,8 +195,16 @@ nav {
   flex-direction: column;
 }
 
-.side-cart-item-info h4 { margin: 0 0 5px 0; font-size: 0.9em; font-weight: normal; }
-.side-cart-item-info p { margin: 0 0 8px 0; font-size: 0.85em; color: #777; }
+.side-cart-item-info h4 {
+  margin: 0 0 5px 0;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+.side-cart-item-info p {
+  margin: 0 0 8px 0;
+  font-size: 0.85em;
+  color: #777;
+}
 
 /* Penyesuai Jumlah */
 .quantity-adjuster {
@@ -214,15 +235,13 @@ nav {
   -webkit-appearance: none;
   margin: 0;
 }
-.quantity-adjuster input[type=number] {
+.quantity-adjuster input[type="number"] {
   -moz-appearance: textfield;
 }
 
 .side-cart-item-pricing {
   text-align: right;
 }
-
-
 
 /* Footer */
 .side-cart-footer {
@@ -231,8 +250,18 @@ nav {
   background-color: #fdfdfd;
 }
 
-.order-note label { font-size: 0.8em; color: #555; }
-.order-note textarea { width: 100%; border: 1px solid #e0e0e0; margin-top: 5px; padding: 8px; box-sizing: border-box; resize: vertical;}
+.order-note label {
+  font-size: 0.8em;
+  color: #555;
+}
+.order-note textarea {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  margin-top: 5px;
+  padding: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+}
 
 .discount-section {
   display: flex;
@@ -261,7 +290,9 @@ nav {
   margin-bottom: 8px;
   font-size: 0.9em;
 }
-.summary-row.discount-row { color: #e74c3c; }
+.summary-row.discount-row {
+  color: #e74c3c;
+}
 .summary-row.total-row {
   font-size: 1.1em;
   font-weight: bold;
@@ -281,7 +312,6 @@ nav {
   color: #333;
   border: 1px solid #333;
 }
-
 
 /* Product Filter Styles */
 .filter-container {
@@ -347,7 +377,7 @@ main {
 .carousel-slide img {
   width: 100%;
   height: auto;
-  max-height: 500px; /* Sesuaikan tinggi maksimum jika perlu */
+  max-height: 600px; /* Sesuaikan tinggi maksimum jika perlu */
   object-fit: cover;
   display: block;
 }
@@ -382,7 +412,7 @@ main {
 .product-card {
   text-align: center;
   gap: 50px;
-  padding: 50px 0;
+  padding: 10px; /* Mengurangi padding agar lebih pas di mobile */
 }
 
 .product-card img {
@@ -582,7 +612,6 @@ footer {
   font-size: 0.9em;
 }
 
-
 /* Pop-up Voucher Styles */
 .popup-overlay {
   position: fixed;
@@ -706,7 +735,7 @@ footer {
   border-top-right-radius: 8px;
   z-index: 999;
   cursor: pointer;
-  
+
   /* Tombol disembunyikan secara default */
   opacity: 0;
   visibility: hidden;
@@ -718,64 +747,251 @@ footer {
   visibility: visible;
 }
 
+/* ========== CHECKOUT PAGE STYLES ========== */
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px 5%;
+}
+
+.checkout-main {
+  flex: 2; /* Main content takes more space */
+  min-width: 300px;
+}
+
+.checkout-sidebar {
+  flex: 1; /* Sidebar takes less space */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.checkout-header {
+  margin-bottom: 2em;
+}
+.checkout-header h1 {
+  text-align: center;
+}
+.breadcrumbs {
+  text-align: center;
+  color: #888;
+  font-size: 0.9em;
+}
+.checkout-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
 /* ========== CHECKOUT INFORMATION FORM STYLES ========== */
 
 .form-section {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 .form-section__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
 }
 
 .form-section h2 {
-    font-size: 1.2em;
-    margin: 0;
+  font-size: 1.2em;
+  margin: 0;
 }
 
 .form-field {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .form-field input[type="text"],
 .form-field input[type="email"],
 .form-field input[type="tel"],
 .form-field select {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1em;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
 }
 
 .form-row {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
 .form-row .form-field {
-    flex: 1;
+  flex: 1;
 }
 
 .checkbox-field {
-    display: flex;
-    align-items: center;
-    font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
 }
 
 .checkbox-field input {
-    margin-right: 0.75em;
-    width: auto;
+  margin-right: 0.75em;
+  width: auto;
 }
 
 .continue-btn {
-    padding: 15px 30px;
+  padding: 15px 30px;
+  font-size: 1em;
+  background-color: #337ab7;
+  border: none;
+  color: white;
+}
+
+/* ###################################################### */
+/* ############### RESPONSIVE STYLES START ############## */
+/* ###################################################### */
+
+/* Tablet & Smaller Desktop (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 20px;
     font-size: 1em;
-    background-color: #337ab7;
-    border: none;
-    color: white;
+  }
+
+  .checkout-container {
+    flex-direction: column-reverse; /* Ringkasan pesanan di atas pada tablet */
+  }
+  .carousel-slide img {
+    max-height: 500px; /* Sesuaikan tinggi maksimum jika perlu */
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Header & Navigasi */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 3%;
+  }
+
+  #nav-standard-view {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap; /* Agar link bisa turun jika tidak muat */
+    padding: 0;
+  }
+
+  .nav-icons {
+    justify-content: center;
+  }
+
+  /* Main Content */
+  main {
+    padding: 20px 3%;
+  }
+
+  .collection-header h1 {
+    font-size: 1.8em;
+  }
+
+  /* Filter */
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch; /* Membuat semua grup filter selebar container */
+  }
+
+  /* Product Grid */
+  .product-grid {
+    grid-template-columns: 1fr 1fr; /* 2 kolom di mobile */
+    gap: 10px;
+  }
+  .product-card h3 {
+    font-size: 0.9em; /* Kecilkan font judul produk */
+  }
+  .product-card p {
+    font-size: 0.9em;
+  }
+
+  /* Product Detail Page */
+  .product-detail-container {
+    flex-direction: column; /* Tumpuk gambar dan info produk */
+  }
+
+  .product-info h1 {
+    font-size: 1.8em;
+  }
+
+  /* Checkout Page */
+  .checkout-container {
+    padding: 10px 3%;
+  }
+
+  .breadcrumbs {
+    font-size: 0.8em;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .checkout-actions {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch; /* Membuat tombol selebar container */
+  }
+
+  .continue-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Voucher Pop-up */
+  .voucher-card {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    text-align: center;
+  }
+  .voucher-code {
+    margin-left: 0;
+  }
+}
+
+/* Very Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .header-top-bar p {
+    font-size: 0.8em;
+  }
+
+  .logo h1 {
+    font-size: 1.8em;
+  }
+
+  .side-cart-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .floating-discount-btn {
+    display: none; /* Sembunyikan tombol diskon melayang di layar sangat kecil */
+  }
 }
