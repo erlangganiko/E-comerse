@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Information</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="checkout-container">
+        <main class="checkout-main">
+            <header class="checkout-header">
+                <a href="index.html">
+                    <h1>Geulis</h1>
+                </a>
+                <nav class="breadcrumbs">
+                    <a href="cart.html">Cart</a> &gt;
+                    <strong>Information</strong> &gt;
+                    <span>Shipping</span> &gt;
+                    <span>Payment</span>
+                </nav>
+            </header>
+
+            <div class="form-section">
+                <div class="form-section__header">
+                    <h2>Contact</h2>
+                    <a href="#">Log in</a>
+                </div>
+                <div class="form-field">
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-field checkbox-field">
+                    <input type="checkbox" id="email-offers">
+                    <label for="email-offers">Email me with news and offers</label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Shipping address</h2>
+                <div class="form-field">
+                    <select id="country">
+                        <option value="indonesia">Indonesia</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <input type="text" id="first-name" placeholder="First name">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" id="last-name" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <input type="text" id="address" placeholder="Address">
+                </div>
+                <div class="form-field">
+                    <input type="text" id="kecamatan" placeholder="Kecamatan">
+                </div>
+                <div class="form-field">
+                    <input type="text" id="city" placeholder="City">
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <select id="province">
+                            <option value="west-java">West Java</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" id="postal-code" placeholder="Postal code">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <input type="tel" id="phone" placeholder="Phone">
+                </div>
+                <div class="form-field checkbox-field">
+                    <input type="checkbox" id="save-info">
+                    <label for="save-info">Save this information for next time</label>
+                </div>
+            </div>
+
+            <div class="checkout-actions">
+                <a href="cart.html">&lt; Return to cart</a>
+                <button class="btn continue-btn">Continue to shipping</button>
+            </div>
+        </main>
+
+        <aside class="checkout-sidebar">
+            <div id="order-summary-items">
+            </div>
+            <hr>
+            <div class="discount-section">
+                <input type="text" placeholder="Discount code or gift card">
+                <button>Apply</button>
+            </div>
+            <hr>
+            <div class="summary-details">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">Rp 0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="summary-shipping">Calculated at next step</span>
+                </div>
+                <hr>
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span id="summary-total">Rp 0</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>
