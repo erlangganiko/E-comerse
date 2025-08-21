@@ -1,363 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop All - Geulis</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop All - Geulis</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <header>
-    <div class="header-top-bar">
-      <p>Free shipping for orders over IDR 500,000!</p>
-    </div>
-    <nav>
-      <div class="logo">
-        <a href="index.html">
-          <h1>Geulis</h1>
-        </a>
+  <body>
+    <header>
+      <div class="header-top-bar">
+        <p>Free shipping for orders over IDR 500,000!</p>
       </div>
-
-      <div id="nav-standard-view" class="nav-content active">
-        <ul class="nav-links">
-          <li><a href="shopall.html">Shop All</a></li>
-          <li><a href="#">New Arrivals</a></li>
-          <li><a href="#">Dresses</a></li>
-          <li><a href="#">Tops</a></li>
-        </ul>
-        <div class="nav-icons">
-          <a href="#" id="search-toggle-icon"><img src="https://icongr.am/feather/search.svg?size=24&color=000000"
-              alt="Search" /></a>
-          <a href="#"><img src="https://icongr.am/feather/user.svg?size=24&color=000000" alt="User" /></a>
-          <a href="#" id="side-cart-toggle" class="cart-icon-link">
-            <img src="https://icongr.am/feather/shopping-cart.svg?size=24&color=000000" alt="Cart" />
-            <span class="cart-count" id="cart-count">0</span>
-          </a>
-        </div>
-      </div>
-
-      <div id="nav-search-view" class="nav-content">
-        <input type="text" id="nav-search-input" placeholder="Ketik untuk mencari produk..." autocomplete="off">
-        <button id="close-nav-search" class="close-nav-search-btn">&times;</button>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="filter-container">
-      <div class="filter-group">
-        <label for="category-filter">Kategori:</label>
-        <select id="category-filter">
-          <option value="all">Semua</option>
-          <option value="tshirt">T-Shirt</option>
-          <option value="hoodie">Hoodie & Jacket</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label for="price-filter">Harga:</label>
-        <select id="price-filter">
-          <option value="all">Semua</option>
-          <option value="0-400000">dibawah IDR 400.000</option>
-          <option value="400001-1000000">IDR 400.001 - IDR 1.000.000</option>
-          <option value="1000001-9999999">diatas IDR 1.000.000</option>
-        </select>
-      </div>
-    </section>
-
-    <section class="hero-carousel">
-      <div id="carousel-track">
-        <div class="carousel-slide">
-          <img src="asset/catalog/coming soon/download (1).jpeg" alt="Promotional Banner 1" />
-        </div>
-        <div class="carousel-slide">
-          <img src="asset/catalog/coming soon/download (2).jpeg" alt="Promotional Banner 2" />
-        </div>
-        <div class="carousel-slide">
-          <img src="asset/catalog/coming soon/download.jpeg" alt="Promotional Banner 3" />
-        </div>
-      </div>
-    </section>
-
-    <section class="collection-header">
-      <h1>Shop All</h1>
-      <p>
-        Browse through our entire collection of beautiful and modern apparel.
-      </p>
-    </section>
-
-    <section class="product-listing">
-      <div class="product-grid">
-        <div class="product-card" data-category="tshirt" data-price="1967000">
-          <a
-            href="detail-product.html?name=BAPE 1st Camo Shark Tee 'White Green'&price=IDR 1.967.000&image=asset/catalog/Clothes/BAPE 1st Camo Shark Tee 'White  Green'/bape-1st-Camo-Shark-Tee_White-_Green_-1_1000x.webp">
-            <img
-              src="asset/catalog/Clothes/BAPE 1st Camo Shark Tee 'White  Green'/bape-1st-Camo-Shark-Tee_White-_Green_-1_1000x.webp"
-              alt="BAPE 1st Camo Shark Tee 'White Green'" />
-            <h3>BAPE 1st Camo Shark Tee 'White Green'</h3>
-            <p>IDR 1.967.000</p>
-          </a>
-        </div>
-        <div class="product-card" data-category="tshirt" data-price="2152000">
-          <a
-            href="detail-product.html?name=BAPE ABC Camo Shark Tee 'Black Blue'&price=IDR 2.152.000&image=asset/catalog/Clothes/BAPE ABC Camo Shark Tee 'Black  Blue'/BAPE-Abc-Camo-Shark-Tee-Black-_-Blue-1_1000x.webp">
-            <img
-              src="asset/catalog/Clothes/BAPE ABC Camo Shark Tee 'Black  Blue'/BAPE-Abc-Camo-Shark-Tee-Black-_-Blue-1_1000x.webp"
-              alt="BAPE ABC Camo Shark Tee 'Black Blue'" />
-            <h3>BAPE ABC Camo Shark Tee 'Black Blue</h3>
-            <p>IDR 2.152.000</p>
-          </a>
-        </div>
-        <div class="product-card" data-category="tshirt" data-price="450000">
-          <a
-            href="detail-product.html?name=HELLSTAR Human Development SS Tee 'Off White'&price=IDR 450,000&image=asset/catalog/Clothes/HELLSTAR Human Development SS Tee 'Off White'/1720402320-7AyqKQck_1000x.webp">
-            <img
-              src="asset/catalog/Clothes/HELLSTAR Human Development SS Tee 'Off White'/1720402320-7AyqKQck_1000x.webp"
-              alt="HELLSTAR Human Development SS Tee 'Off White'" />
-            <h3>HELLSTAR Human Development SS Tee 'Off White'</h3>
-            <p>IDR 450,000</p>
-          </a>
-        </div>
-        <div class="product-card" data-category="tshirt" data-price="320000">
-          <a
-            href="detail-product.html?name=KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)&price=IDR 320,000&image=asset/catalog/Clothes/KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)/1724115613-xvjFtZAh_1000x.webp">
-            <img
-              src="asset/catalog/Clothes/KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)/1724115613-xvjFtZAh_1000x.webp"
-              alt="KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)" />
-            <h3>KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)</h3>
-            <p>IDR 320,000</p>
-          </a>
-        </div>
-        <div class="product-card" data-category="tshirt" data-price="350000">
-          <a
-            href="detail-product.html?name=KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)&price=IDR 350,000&image=asset/catalog/Clothes/KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)/1725426953-SqwGVgpz_1000x.webp">
-            <img
-              src="asset/catalog/Clothes/KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)/1725426953-SqwGVgpz_1000x.webp"
-              alt="KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)" />
-            <h3>KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)</h3>
-            <p>IDR 350,000</p>
-          </a>
-        </div>
-        <div class="product-card" data-category="tshirt" data-price="400000">
-          <a
-            href="detail-product.html?name=Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt 'White' (2024)&price=IDR 400,000&image=asset/catalog/Clothes/Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt 'White'(2024)/1726458251-CVOounId_1000x.webp">
-            <img
-              src="asset/catalog/Clothes/Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt 'White'(2024)/1726458251-CVOounId_1000x.webp"
-              alt="Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt 'White'(2024)" />
-            <h3>Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt 'White'(2024)</h3>
-            <p>IDR 400,000</p>
-          </a>
-        </div>
-        <div class="product-card" data-category="tshirt" data-price="375000">
-          <a
-            href="detail-product.html?name=Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)&price=IDR 375,000&image=asset/catalog/Clothes/Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)/1743039636-ETy9oAP5_1000x.webp">
-            <img
-              src="asset/catalog/Clothes/Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)/1743039636-ETy9oAP5_1000x.webp"
-              alt="Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)" />
-            <h3>Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)</h3>
-            <p>IDR 375,000</p>
-          </a>
-        </div>
-        <div class="product-card" data-category="tshirt" data-price="450000">
-          <a
-            href="detail-product.html?name=Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)&price=IDR 450,000&image=asset/catalog/Clothes/Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)/Nike-x-NOCTA-NRG-Big-Body-CS-T-Shirt-Black-2024-1_1000x.webp">
-            <img
-              src="asset/catalog/Clothes/Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)/Nike-x-NOCTA-NRG-Big-Body-CS-T-Shirt-Black-2024-1_1000x.webp"
-              alt="Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)" />
-            <h3>Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)</h3>
-            <p>IDR 450,000</p>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <h1>Geulis</h1>
           </a>
         </div>
 
-        <div class="product-card" data-category="hoodie" data-price="375000">
-          <a
-            href="detail-product.html?name=Supreme Small Box Hooded Sweatshirt 'Navy' (2024)&price=IDR 375,000&image=asset/catalog/Hoodie/Supreme Small Box Hooded Sweatshirt 'Navy' (2024)/Supreme-Small-Box-Hooded-Sweatshirt-_Navy_-_2024_-front_1000x.webp">
-            <img
-              src="asset/catalog/Hoodie/Supreme Small Box Hooded Sweatshirt 'Navy' (2024)/Supreme-Small-Box-Hooded-Sweatshirt-_Navy_-_2024_-front_1000x.webp"
-              alt="Supreme Small Box Hooded Sweatshirt 'Navy' (2024)" />
-            <h3>Supreme Small Box Hooded Sweatshirt 'Navy' (2024)</h3>
-            <p>IDR 375,000</p>
-          </a>
+        <div id="nav-standard-view" class="nav-content active">
+          <ul class="nav-links">
+            <li><a href="shopall.html">Shop All</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Tops</a></li>
+          </ul>
+          <div class="nav-icons">
+            <a href="#" id="search-toggle-icon"
+              ><img
+                src="https://icongr.am/feather/search.svg?size=24&color=000000"
+                alt="Search"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://icongr.am/feather/user.svg?size=24&color=000000"
+                alt="User"
+            /></a>
+            <a href="#" id="side-cart-toggle" class="cart-icon-link">
+              <img
+                src="https://icongr.am/feather/shopping-cart.svg?size=24&color=000000"
+                alt="Cart"
+              />
+              <span class="cart-count" id="cart-count">0</span>
+            </a>
+          </div>
         </div>
-        <div class="product-card" data-category="hoodie" data-price="320000">
-          <a
-            href="detail-product.html?name=Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)&price=IDR 320,000&image=asset/catalog/Hoodie/Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)/Supreme-Martine-Rose-Hooded-Sweatshirt-_Black_-_2024_-back_1000x.webp">
-            <img
-              src="asset/catalog/Hoodie/Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)/Supreme-Martine-Rose-Hooded-Sweatshirt-_Black_-_2024_-back_1000x.webp"
-              alt="Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)" />
-            <h3>Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)</h3>
-            <p>IDR 320,000</p>
-          </a>
-        </div>
-        <div class="product-card" data-category="hoodie" data-price="320000">
-          <a
-            href="detail-product.html?name=Geedup Team Logo Hooded Jacket 'Black' (2025)&price=IDR 320,000&image=asset/catalog/Hoodie/Geedup Team Logo Hooded Jacket 'Black' (2025)/Geedup-Team-Logo-Hooded-Jacket-_Black_-_2025_-1_1000x.webp">
-            <img
-              src="asset/catalog/Hoodie/Geedup Team Logo Hooded Jacket 'Black' (2025)/Geedup-Team-Logo-Hooded-Jacket-_Black_-_2025_-1_1000x.webp"
-              alt="Geedup Team Logo Hooded Jacket 'Black' (2025)" />
-            <h3>Geedup Team Logo Hooded Jacket 'Black' (2025)</h3>
-            <p>IDR 320,000</p>
-          </a>
-        </div>
-        <div class="product-card" data-category="hoodie" data-price="320000">
-          <a
-            href="detail-product.html?name=Geedup Team Logo Hoodie 'Black/White/Red' (2025)&price=IDR 320,000&image=asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp">
-            <img
-              src="asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp"
-              alt="Geedup Team Logo Hoodie 'Black/White/Red' (2025)" />
-            <h3>Geedup Team Logo Hoodie 'Black/White/Red' (2025)</h3>
-            <p>IDR 320,000</p>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>About Us</h3>
+        <div id="nav-search-view" class="nav-content">
+          <input
+            type="text"
+            id="nav-search-input"
+            placeholder="Ketik untuk mencari produk..."
+            autocomplete="off"
+          />
+          <button id="close-nav-search" class="close-nav-search-btn">
+            &times;
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="filter-container">
+        <div class="filter-group">
+          <label for="category-filter">Kategori:</label>
+          <select id="category-filter">
+            <option value="all">Semua</option>
+            <option value="tshirt">T-Shirt</option>
+            <option value="hoodie">Hoodie & Jacket</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="price-filter">Harga:</label>
+          <select id="price-filter">
+            <option value="all">Semua</option>
+            <option value="0-400000">dibawah IDR 400.000</option>
+            <option value="400001-1000000">IDR 400.001 - IDR 1.000.000</option>
+            <option value="1000001-9999999">diatas IDR 1.000.000</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="hero-carousel">
+        <div id="carousel-track">
+          <div class="carousel-slide">
+            <img
+              src="asset/catalog/coming soon/download (1).jpeg"
+              alt="Promotional Banner 1"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="asset/catalog/coming soon/download (2).jpeg"
+              alt="Promotional Banner 2"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="asset/catalog/coming soon/download.jpeg"
+              alt="Promotional Banner 3"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="collection-header">
+        <h1>Shop All</h1>
         <p>
-          Geulis is a fashion brand that celebrates Indonesian heritage with
-          modern designs.
+          Browse through our entire collection of beautiful and modern apparel.
         </p>
+      </section>
+
+      <section class="product-listing">
+        <div class="labels-showcase">
+          <div class="labels-showcase-visuals">
+            <div class="labels-small-panels">
+              <img src="https://i.ibb.co/31z1mWV/trousers1.png" alt="T-Shirt" />
+            </div>
+          </div>
+          <div class="labels-showcase-footer">
+            <h3>T-Shirt</h3>
+            <a href="#">VIEW ALL</a>
+          </div>
+        </div>
+        <div class="product-grid">
+          <div class="product-card" data-category="tshirt" data-price="1967000">
+            <a
+              href="detail-product.html?name=BAPE 1st Camo Shark Tee 'White Green'&price=IDR 1.967.000&image=asset/catalog/Clothes/BAPE 1st Camo Shark Tee 'White  Green'/bape-1st-Camo-Shark-Tee_White-_Green_-1_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Clothes/BAPE 1st Camo Shark Tee 'White  Green'/bape-1st-Camo-Shark-Tee_White-_Green_-1_1000x.webp"
+                alt="BAPE 1st Camo Shark Tee 'White Green'"
+              />
+              <h3>BAPE 1st Camo Shark Tee 'White Green'</h3>
+              <p>IDR 1.967.000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="tshirt" data-price="2152000">
+            <a
+              href="detail-product.html?name=BAPE ABC Camo Shark Tee 'Black Blue'&price=IDR 2.152.000&image=asset/catalog/Clothes/BAPE ABC Camo Shark Tee 'Black  Blue'/BAPE-Abc-Camo-Shark-Tee-Black-_-Blue-1_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Clothes/BAPE ABC Camo Shark Tee 'Black  Blue'/BAPE-Abc-Camo-Shark-Tee-Black-_-Blue-1_1000x.webp"
+                alt="BAPE ABC Camo Shark Tee 'Black Blue'"
+              />
+              <h3>BAPE ABC Camo Shark Tee 'Black Blue</h3>
+              <p>IDR 2.152.000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="tshirt" data-price="450000">
+            <a
+              href="detail-product.html?name=HELLSTAR Human Development SS Tee 'Off White'&price=IDR 450,000&image=asset/catalog/Clothes/HELLSTAR Human Development SS Tee 'Off White'/1720402320-7AyqKQck_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Clothes/HELLSTAR Human Development SS Tee 'Off White'/1720402320-7AyqKQck_1000x.webp"
+                alt="HELLSTAR Human Development SS Tee 'Off White'"
+              />
+              <h3>HELLSTAR Human Development SS Tee 'Off White'</h3>
+              <p>IDR 450,000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="tshirt" data-price="320000">
+            <a
+              href="detail-product.html?name=KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)&price=IDR 320,000&image=asset/catalog/Clothes/KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)/1724115613-xvjFtZAh_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Clothes/KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)/1724115613-xvjFtZAh_1000x.webp"
+                alt="KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)"
+              />
+              <h3>
+                KAWS x Uniqlo Warhol UT Graphic 476351 T-shirt 'Black' (2024)
+              </h3>
+              <p>IDR 320,000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="tshirt" data-price="350000">
+            <a
+              href="detail-product.html?name=KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)&price=IDR 350,000&image=asset/catalog/Clothes/KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)/1725426953-SqwGVgpz_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Clothes/KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)/1725426953-SqwGVgpz_1000x.webp"
+                alt="KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)"
+              />
+              <h3>
+                KAWS x Uniqlo Warhol UT Graphic 476352 T-shirt 'Black' (2024)
+              </h3>
+              <p>IDR 350,000</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="labels-showcase">
+          <div class="labels-showcase-visuals">
+            <div class="labels-small-panels">
+              <img src="https://i.ibb.co/31z1mWV/trousers1.png" alt="T-Shirt" />
+            </div>
+          </div>
+          <div class="labels-showcase-footer">
+            <h3>Hoodie & Jacket</h3>
+            <a href="#">VIEW ALL</a>
+          </div>
+        </div>
+        <div class="product-grid">
+          <div class="product-card" data-category="tshirt" data-price="400000">
+            <a
+              href="detail-product.html?name=Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt 'White' (2024)&price=IDR 400,000&image=asset/catalog/Clothes/Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt 'White'(2024)/1726458251-CVOounId_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Clothes/Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt 'White'(2024)/1726458251-CVOounId_1000x.webp"
+                alt="Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt 'White'(2024)"
+              />
+              <h3>
+                Kaws x Uniqlo Warhol UT Graphic 476423 Kids T-Shirt
+                'White'(2024)
+              </h3>
+              <p>IDR 400,000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="tshirt" data-price="375000">
+            <a
+              href="detail-product.html?name=Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)&price=IDR 375,000&image=asset/catalog/Clothes/Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)/1743039636-ETy9oAP5_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Clothes/Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)/1743039636-ETy9oAP5_1000x.webp"
+                alt="Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)"
+              />
+              <h3>Nike Souvenir Cactus T-Shirt x Drake NOCTA 'White' (2023)</h3>
+              <p>IDR 375,000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="tshirt" data-price="450000">
+            <a
+              href="detail-product.html?name=Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)&price=IDR 450,000&image=asset/catalog/Clothes/Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)/Nike-x-NOCTA-NRG-Big-Body-CS-T-Shirt-Black-2024-1_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Clothes/Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)/Nike-x-NOCTA-NRG-Big-Body-CS-T-Shirt-Black-2024-1_1000x.webp"
+                alt="Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)"
+              />
+              <h3>Nike x NOCTA NRG Big Body CS T-Shirt 'Black' (2024)</h3>
+              <p>IDR 450,000</p>
+            </a>
+          </div>
+
+          <div class="product-card" data-category="hoodie" data-price="375000">
+            <a
+              href="detail-product.html?name=Supreme Small Box Hooded Sweatshirt 'Navy' (2024)&price=IDR 375,000&image=asset/catalog/Hoodie/Supreme Small Box Hooded Sweatshirt 'Navy' (2024)/Supreme-Small-Box-Hooded-Sweatshirt-_Navy_-_2024_-front_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Hoodie/Supreme Small Box Hooded Sweatshirt 'Navy' (2024)/Supreme-Small-Box-Hooded-Sweatshirt-_Navy_-_2024_-front_1000x.webp"
+                alt="Supreme Small Box Hooded Sweatshirt 'Navy' (2024)"
+              />
+              <h3>Supreme Small Box Hooded Sweatshirt 'Navy' (2024)</h3>
+              <p>IDR 375,000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="hoodie" data-price="320000">
+            <a
+              href="detail-product.html?name=Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)&price=IDR 320,000&image=asset/catalog/Hoodie/Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)/Supreme-Martine-Rose-Hooded-Sweatshirt-_Black_-_2024_-back_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Hoodie/Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)/Supreme-Martine-Rose-Hooded-Sweatshirt-_Black_-_2024_-back_1000x.webp"
+                alt="Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)"
+              />
+              <h3>Supreme Martine Rose Hooded Sweatshirt 'Black' (2024)</h3>
+              <p>IDR 320,000</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="labels-showcase">
+          <div class="labels-showcase-visuals">
+            <div class="labels-small-panels">
+              <img src="https://i.ibb.co/31z1mWV/trousers1.png" alt="T-Shirt" />
+            </div>
+          </div>
+          <div class="labels-showcase-footer">
+            <h3>Sepatu</h3>
+            <a href="#">VIEW ALL</a>
+          </div>
+        </div>
+        <div class="product-grid">
+          <div class="product-card" data-category="hoodie" data-price="320000">
+            <a
+              href="detail-product.html?name=Geedup Team Logo Hooded Jacket 'Black' (2025)&price=IDR 320,000&image=asset/catalog/Hoodie/Geedup Team Logo Hooded Jacket 'Black' (2025)/Geedup-Team-Logo-Hooded-Jacket-_Black_-_2025_-1_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Hoodie/Geedup Team Logo Hooded Jacket 'Black' (2025)/Geedup-Team-Logo-Hooded-Jacket-_Black_-_2025_-1_1000x.webp"
+                alt="Geedup Team Logo Hooded Jacket 'Black' (2025)"
+              />
+              <h3>Geedup Team Logo Hooded Jacket 'Black' (2025)</h3>
+              <p>IDR 320,000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="hoodie" data-price="320000">
+            <a
+              href="detail-product.html?name=Geedup Team Logo Hoodie 'Black/White/Red' (2025)&price=IDR 320,000&image=asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp"
+                alt="Geedup Team Logo Hoodie 'Black/White/Red' (2025)"
+              />
+              <h3>Geedup Team Logo Hoodie 'Black/White/Red' (2025)</h3>
+              <p>IDR 320,000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="hoodie" data-price="320000">
+            <a
+              href="detail-product.html?name=Geedup Team Logo Hoodie 'Black/White/Red' (2025)&price=IDR 320,000&image=asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp"
+                alt="Geedup Team Logo Hoodie 'Black/White/Red' (2025)"
+              />
+              <h3>Geedup Team Logo Hoodie 'Black/White/Red' (2025)</h3>
+              <p>IDR 320,000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="hoodie" data-price="320000">
+            <a
+              href="detail-product.html?name=Geedup Team Logo Hoodie 'Black/White/Red' (2025)&price=IDR 320,000&image=asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp"
+                alt="Geedup Team Logo Hoodie 'Black/White/Red' (2025)"
+              />
+              <h3>Geedup Team Logo Hoodie 'Black/White/Red' (2025)</h3>
+              <p>IDR 320,000</p>
+            </a>
+          </div>
+          <div class="product-card" data-category="hoodie" data-price="320000">
+            <a
+              href="detail-product.html?name=Geedup Team Logo Hoodie 'Black/White/Red' (2025)&price=IDR 320,000&image=asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp"
+            >
+              <img
+                src="asset/catalog/Hoodie/Geedup Team Logo Hoodie 'Black  White  Red' (2025)/Geedup-Team-Logo-Hoodie-_Black-Red-White_-_2025_-front_1000x.webp"
+                alt="Geedup Team Logo Hoodie 'Black/White/Red' (2025)"
+              />
+              <h3>Geedup Team Logo Hoodie 'Black/White/Red' (2025)</h3>
+              <p>IDR 320,000</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            Geulis is a fashion brand that celebrates Indonesian heritage with
+            modern designs.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <a href="#">Instagram</a> | <a href="#">Facebook</a>
+        </div>
       </div>
-      <div class="footer-section">
-        <h3>Customer Service</h3>
-        <ul>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Shipping & Returns</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Geulis. All Rights Reserved.</p>
       </div>
-      <div class="footer-section">
-        <h3>Follow Us</h3>
-        <a href="#">Instagram</a> | <a href="#">Facebook</a>
+    </footer>
+
+    <!--floating discount-btn-->
+    <a href="#" class="floating-discount-btn" id="floatingDiscountButton">
+      <span>Diskon</span>
+    </a>
+    <!--floating discount-btn-->
+
+    <!--pop up diskon -->
+    <div class="popup-overlay" id="voucherPopup">
+      <div class="popup-content">
+        <button class="popup-close" id="closePopup">&times;</button>
+        <h2>DISCOUNT VOUCHER</h2>
+        <p>Checkout our active promotions! Spend more to save more!</p>
+        <p><strong>Available Discounts</strong></p>
+
+        <div class="voucher-list">
+          <div class="voucher-card disabled">
+            <div class="voucher-details">
+              <p><strong>Rp50RB Min. Belanja Rp 1.000.000</strong></p>
+            </div>
+            <div class="voucher-expiry">
+              <p>Expires:<br />31/08/2025, 23.00.00</p>
+            </div>
+          </div>
+          <div class="voucher-card">
+            <div class="voucher-details">
+              <p>
+                <strong>DISKON 35RB + FREE SHIPPING SEINDONESIA</strong>
+              </p>
+              <p>
+                Gunakan Voucher Sebelum Kehabisan! Diskon Rp35RB Min. Belanja Rp
+                750.000
+              </p>
+            </div>
+            <div class="voucher-code">
+              <p>Coupon Code</p>
+              <div class="code">AGUSTUS35</div>
+              <button class="apply-btn">Apply</button>
+              <p class="expires">Expires: 31/08/2025, 23.00.00</p>
+            </div>
+          </div>
+          <div class="voucher-card">
+            <div class="voucher-details">
+              <p>
+                <strong>DISKON 25RB + FREE SHIPPING SEINDONESIA</strong>
+              </p>
+              <p>
+                Gunakan Voucher Sebelum Kehabisan! Diskon Rp25RB Min. Belanja Rp
+                500.000
+              </p>
+            </div>
+            <div class="voucher-code">
+              <p>Coupon Code</p>
+              <div class="code">AGUSTUS25</div>
+              <button class="apply-btn">Apply</button>
+              <p class="expires">Expires: 31/08/2025, 23.00.00</p>
+            </div>
+          </div>
+          <div class="voucher-card">
+            <div class="voucher-details">
+              <p><strong>DISKON 10RB</strong></p>
+              <p>
+                Gunakan Voucher Sebelum Kehabisan! Diskon Rp10RB Min. Belanja Rp
+                250.000
+              </p>
+            </div>
+            <div class="voucher-code">
+              <p>Coupon Code</p>
+              <div class="code">AGUSTUS10</div>
+              <button class="apply-btn">Apply</button>
+              <p class="expires">Expires: 31/08/2025, 23.00.00</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn" id="continueShopping">Continue Shopping</button>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Geulis. All Rights Reserved.</p>
+    <!--penutup pop up diskon-->
+
+    <!-- side cart-->
+
+    <div id="side-cart-overlay" class="side-cart-overlay">
+      <div id="side-cart-container" class="side-cart-container">
+        <div class="side-cart-header">
+          <h3>Cart</h3>
+          <button id="close-side-cart" class="close-side-cart-btn">
+            &times;
+          </button>
+        </div>
+
+        <div id="side-cart-items" class="side-cart-items"></div>
+        <div class="side-cart-footer">
+          <div class="order-note">
+            <label for="order-note">ORDER NOTE</label>
+            <textarea id="order-note" rows="3"></textarea>
+          </div>
+
+          <div class="discount-section">
+            <input type="text" id="discount-code" placeholder="Discount Code" />
+            <button id="apply-discount-btn">APPLY</button>
+          </div>
+
+          <div class="side-cart-summary">
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span id="side-cart-subtotal">IDR 0</span>
+            </div>
+            <div class="summary-row">
+              <span>Est. shipping</span>
+              <span id="side-cart-shipping">FREE</span>
+            </div>
+            <div class="summary-row total-row">
+              <span>EST. TOTAL</span>
+              <span id="side-cart-total">IDR 0</span>
+            </div>
+          </div>
+        </div>
+        <p class="checkout-notice">
+          Shipping, taxes, and discount codes calculated at checkout.
+        </p>
+        <a href="check-out-information.html" class="btn checkout-btn"
+          >CHECK OUT</a
+        >
+        <div class="side-cart-footer"></div>
+      </div>
     </div>
-  </footer>
-
-  <!--floating discount-btn-->
-  <a href="#" class="floating-discount-btn" id="floatingDiscountButton">
-    <span>Diskon</span>
-  </a>
-  <!--floating discount-btn-->
-
-  <!--pop up diskon -->
-  <div class="popup-overlay" id="voucherPopup">
-    <div class="popup-content">
-      <button class="popup-close" id="closePopup">&times;</button>
-      <h2>DISCOUNT VOUCHER</h2>
-      <p>Checkout our active promotions! Spend more to save more!</p>
-      <p><strong>Available Discounts</strong></p>
-
-      <div class="voucher-list">
-        <div class="voucher-card disabled">
-          <div class="voucher-details">
-            <p><strong>Rp50RB Min. Belanja Rp 1.000.000</strong></p>
-          </div>
-          <div class="voucher-expiry">
-            <p>Expires:<br />31/08/2025, 23.00.00</p>
-          </div>
-        </div>
-        <div class="voucher-card">
-          <div class="voucher-details">
-            <p>
-              <strong>DISKON 35RB + FREE SHIPPING SEINDONESIA</strong>
-            </p>
-            <p>Gunakan Voucher Sebelum Kehabisan! Diskon Rp35RB Min. Belanja Rp 750.000</p>
-          </div>
-          <div class="voucher-code">
-            <p>Coupon Code</p>
-            <div class="code">AGUSTUS35</div>
-            <button class="apply-btn">Apply</button>
-            <p class="expires">Expires: 31/08/2025, 23.00.00</p>
-          </div>
-        </div>
-        <div class="voucher-card">
-          <div class="voucher-details">
-            <p>
-              <strong>DISKON 25RB + FREE SHIPPING SEINDONESIA</strong>
-            </p>
-            <p>Gunakan Voucher Sebelum Kehabisan! Diskon Rp25RB Min. Belanja Rp 500.000</p>
-          </div>
-          <div class="voucher-code">
-            <p>Coupon Code</p>
-            <div class="code">AGUSTUS25</div>
-            <button class="apply-btn">Apply</button>
-            <p class="expires">Expires: 31/08/2025, 23.00.00</p>
-          </div>
-        </div>
-        <div class="voucher-card">
-          <div class="voucher-details">
-            <p><strong>DISKON 10RB</strong></p>
-            <p>Gunakan Voucher Sebelum Kehabisan! Diskon Rp10RB Min. Belanja Rp 250.000</p>
-          </div>
-          <div class="voucher-code">
-            <p>Coupon Code</p>
-            <div class="code">AGUSTUS10</div>
-            <button class="apply-btn">Apply</button>
-            <p class="expires">Expires: 31/08/2025, 23.00.00</p>
-          </div>
-        </div>
-      </div>
-      <button class="btn" id="continueShopping">Continue Shopping</button>
-    </div>
-  </div>
-  <!--penutup pop up diskon-->
-
-  <!-- side cart-->
-
-  <div id="side-cart-overlay" class="side-cart-overlay">
-
-    <div id="side-cart-container" class="side-cart-container">
-      <div class="side-cart-header">
-        <h3>Cart</h3>
-        <button id="close-side-cart" class="close-side-cart-btn">&times;</button>
-      </div>
-
-      <div id="side-cart-items" class="side-cart-items">
-      </div>
-      <div class="side-cart-footer">
-        <div class="order-note">
-          <label for="order-note">ORDER NOTE</label>
-          <textarea id="order-note" rows="3"></textarea>
-        </div>
-
-        <div class="discount-section">
-          <input type="text" id="discount-code" placeholder="Discount Code">
-          <button id="apply-discount-btn">APPLY</button>
-        </div>
-
-        <div class="side-cart-summary">
-          <div class="summary-row">
-            <span>Subtotal</span>
-            <span id="side-cart-subtotal">IDR 0</span>
-          </div>
-          <div class="summary-row">
-            <span>Est. shipping</span>
-            <span id="side-cart-shipping">FREE</span>
-          </div>
-          <div class="summary-row total-row">
-            <span>EST. TOTAL</span>
-            <span id="side-cart-total">IDR 0</span>
-          </div>
-        </div>
-      </div>
-      <p class="checkout-notice">Shipping, taxes, and discount codes calculated at checkout.</p>
-      <a href="check-out-information.html" class="btn checkout-btn">CHECK OUT</a>
-      <div class="side-cart-footer">
-      </div>
-
-    </div>
-  </div>
-  <!--penutup side card -->
-  <script src="js/main.js"></script>
-</body>
-
+    <!--penutup side card -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
