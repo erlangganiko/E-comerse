@@ -972,6 +972,10 @@ footer {
     justify-content: center;
   }
 
+  #nav-search-input {
+    margin-left: 80px;
+  }
+
   /* Main Content */
   main {
     padding: 20px 3%;
